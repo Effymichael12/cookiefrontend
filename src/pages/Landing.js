@@ -6,7 +6,7 @@ function Landing() {
   useEffect(() =>{
     const getEmail = async() =>{
       try {
-        const response = await axios.get('http://localhost:5200/get-email', {
+        const response = await axios.get('https://cookiebackend.onrender.com/get-email', {
           withCredentials: true
         });
         if(response.status === 200){

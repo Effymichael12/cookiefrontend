@@ -6,7 +6,7 @@ function Login() {
   const [password, setPassword] = useState('');
   const handleSubmit = async() =>{
     try {
-      const response = await axios.post('http://localhost:5200/login', {email, password}, {
+      const response = await axios.post('https://cookiebackend.onrender.com/login', {email, password}, {
         withCredentials: true
       });
       if(response.status === 200){
